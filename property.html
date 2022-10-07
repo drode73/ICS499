@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Real Vision Agency</title>
+    <link rel="stylesheet" href="propertyStyles.css" />
+    <!--This is the link to the fontAweomse link API please dont delete-->
+    <script src="https://kit.fontawesome.com/9f6b5672d4.js" crossorigin="anonymous"></script>
+    <!--These are the links to adjust font from font.google API please dont delete-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <!-- This is a container storing links to other pages on the navigation bar containing links to traverse to other pages-->
+        <div class="navbar__container">
+            <!--This is where the logo on the top left is held; href targets the image for now its placeholder is "/" which means the home page-->
+            <a href="/" id="navbar__logo"><i class="fa-solid fa-house-chimney"></i>Real Vision</a>
+            <!--When the width/height gets to small the view converts to a mobile friendly userface-->
+            <div class="navbar__toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <!--Menu bar with a unordered list of links to travers to different pages-->
+            <ul class="navbar__menu">
+                <li class="navbar__item">
+                    <a href="http://127.0.0.1:5500/index.html" class="navbar__links">
+                        Home
+                    </a>
+                </li>
+                <li class="navbar__item">
+                    <a href="http://127.0.0.1:5500/property.html" class="navbar__links">
+                        Featured Properties
+                    </a>
+                </li>
+                <li class="navbar__btn">
+                    <!--Menu bar which allows the user to message an agent-->
+                    <a href="http://127.0.0.1:5500/aboutUs.html" class="navbar__links">
+                        About Us
+                    </a>
+                </li>
+                <li class="navbar__btn">
+                    <!--Menu bar which allows the user to message an agent-->
+                    <a href="http://127.0.0.1:5500/contact.html" class="button">
+                        Contact Us
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <!--Hero Section-->
+    <div class="main">
+        <div class ="main__container">
+            <div class="main__content">
+                <h1>Featured Property Listings</h1>'
+                <p>This Summers Hottest Properties</p>
+            </div>
+        </div>
+    </div>
+
+    <!--Product Section-->
+    <section id="properties" class="section-p1">
+        <div class="property__container">
+            <div class ="pro">
+                <img src ="images/homes/home1.jpg" alt="">
+                <div class= "home">
+                    <span>Address</span>
+                    <h5>2 Bed 1.5 Bath </h5>
+                    <h5>Agent1 Assigned</h5>
+                    <h4>$320,000.00</h4>
+                    <button class="main__btn"><a href="/contact.html">Get Started</a></button>
+                </div>
+            </div>
+            <div class ="pro">
+                <img src ="images/homes/home2.jpg" alt="">
+                <div class= "home">
+                    <span>Address</span>
+                    <h5>4 Bed 3 Bath </h5>
+                    <h5>Agent1 Assigned</h5>
+                    <h4>$420,000.00</h4>
+                    <button class="main__btn"><a href="/contact.html">Get Started</a></button>
+                </div>
+            </div>
+            <div class ="pro">
+                <img src ="images/homes/home3.jpg" alt="">
+                <div class= "home">
+                    <span>Address</span>
+                    <h5>3 Bed 2.5 Bath </h5>
+                    <h5>Agent1 Assigned</h5>
+                    <h4>$1,320,000.00</h4>
+                    <button class="main__btn"><a href="/contact.html">Get Started</a></button>
+                </div>
+            </div>
+            <div class ="pro">
+                <img src ="images/homes/home4.jpg" alt="">
+                <div class= "home">
+                    <span>Address</span>
+                    <h5>3 Bed 2 Bath </h5>
+                    <h5>Agent1 Assigned</h5>
+                    <h4>$310,000.00</h4>
+                    <button class="main__btn"><a href="/contact.html">Get Started</a></button>
+                </div>
+            </div>
+            <div class ="pro">
+                <img src ="images/homes/home5.jpg" alt="">
+                <div class= "home">
+                    <span>Address</span>
+                    <h5>2 Bed 1.5 Bath </h5>
+                    <h5>Agent1 Assigned</h5>
+                    <h4>$270,000.00</h4>
+                    <button class="main__btn"><a href="/contact.html">Get Started</a></button>
+                </div>
+            </div>
+            <div class ="pro">
+                <img src ="images/homes/home6.jpg" alt="">
+                <div class= "home">
+                    <span>Address</span>
+                    <h5>5 Bed 3.5 Bath </h5>
+                    <h5>Agent1 Assigned</h5>
+                    <h4>$2,320,000.00</h4>
+                    <button class="main__btn"><a href="/contact.html">Get Started</a></button>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+
+    <!--Footer Section-->
+    <!--Create a container to store foot links-->
+    <div class="footer__container">
+        <!--Create footer link which contain wrappers of individual links items-->
+        <div class="footer__links">
+            <!--Create footer wrapper 1 which contains individual links items to behave modular on site-->
+            <div class="footer__link--wrapper">
+                <!--individual links item -->
+                <div class="footer__link--items">
+                    <h2>About Us</h2>
+                    <a href="/aboutUs.html">What we do</a>
+                    <a href="/aboutUs.html">Testimonials</a>
+                    <a href="/">Terms of Service</a>
+                </div>
+                <!--individual links item -->
+                <div class="footer__link--items">
+                    <h2>Contact Us</h2>
+                    <a href="/contact.html">Contact</a>
+                    <a href="/contact.html">Support</a>
+                </div>
+                <div class="footer__link--items">
+                    <h2>Social Media</h2>
+                    <a href="/">Facebook</a>
+                    <a href="/">Instagram</a>
+                    <a href="/">Youtube</a>
+                </div>
+            </div>
+            <!--Social Media Section-->
+        </div>
+        <div class="social__media">
+            <!--Create footer wrapper which contains individual links items to behave modular on site-->
+            <div class="social__media--wrap">
+                <div class="footer__logo">
+                    <a href="/" id="footer__logo"><i class="fa-solid fa-house-chimney"></i>Real Vision</a>
+                </div>
+                <p class="website__right">Real Vision 2022. All Rights Reserved</p>
+                <div class="social__icons">
+                    <a href="/" class="social__icon--link"><i class="fab fa-facebook"></i></a>
+                    <a href="/" class="social__icon--link"><i class="fab fa-instagram"></i></a>
+                    <a href="/" class="social__icon--link"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="app.js" ></script>        
+</body>
+</html>

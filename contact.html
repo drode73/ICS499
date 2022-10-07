@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Real Vision Agency</title>
+    <link rel="stylesheet" href="contactStyles.css" />
+    <!--This is the link to the fontAweomse link API please dont delete-->
+    <script src="https://kit.fontawesome.com/9f6b5672d4.js" crossorigin="anonymous"></script>
+    <!--These are the links to adjust font from font.google API please dont delete-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans&display=swap" rel="stylesheet">
+
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+
+    <script type="text/javascript">
+        emailjs.init('A15vJshy2WKFicA2W')
+    </script>
+</head>
+
+<body>
+    <nav class="navbar">
+        <!-- This is a container storing links to other pages on the navigation bar containing links to traverse to other pages-->
+        <div class="navbar__container">
+            <!--This is where the logo on the top left is held; href targets the image for now its placeholder is "/" which means the home page-->
+            <a href="/" id="navbar__logo"><i class="fa-solid fa-house-chimney"></i>Real Vision</a>
+            <!--When the width/height gets to small the view converts to a mobile friendly userface-->
+            <div class="navbar__toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <!--Menu bar with a unordered list of links to travers to different pages-->
+            <ul class="navbar__menu">
+                <li class="navbar__item">
+                    <a href="http://127.0.0.1:5500/index.html" class="navbar__links">
+                        Home
+                    </a>
+                </li>
+                <li class="navbar__item">
+                    <a href="http://127.0.0.1:5500/property.html" class="navbar__links">
+                        Featured Properties
+                    </a>
+                </li>
+                <li class="navbar__btn">
+                    <!--Menu bar which allows the user to message an agent-->
+                    <a href="http://127.0.0.1:5500/aboutUs.html" class="navbar__links">
+                        About Us
+                    </a>
+                </li>
+                <li class="navbar__btn">
+                    <!--Menu bar which allows the user to message an agent-->
+                    <a href="http://127.0.0.1:5500/contact.html" class="button">
+                        Contact Us
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div class="contact__container">
+        <div class="contact__content">
+            <h1>Get in Touch</h1>
+            <P>* Mandatory Fields</P>
+            <!--Fields that user enters to send contact info and messages to agency-->
+            <form id="form">
+                <div class="field">
+                    <input type="text" autocomplete="off" name="name" id="name" placeholder="Name*" required>
+                </div>
+                <div class="field">
+                    <input type="text" autocomplete="off" name="email" id="email" placeholder="Email*" required>
+                </div>
+                <div class="field">
+                    <input type="text" autocomplete="off" name="number" id="number" placeholder="Number*" required>
+                </div>
+                <div class="field">
+                    <input type="text" autocomplete="off" name="msg" id="msg" placeholder="Message*" required>
+                </div>
+
+                <input type="submit" autocomplete="off" id="submit" value="Submit" >
+            </form>
+
+
+        </div>
+        <div class="main__img--container">
+            <img src="images/pic1.svg" alt="pic" id="main__img">
+        </div>
+    </div>
+
+    <!--Technical Support-->
+    <div class="main">
+        <div class="main__container">
+            <div class="main__content">
+                <h1>Technical Support</h1>
+                <p>In the unfortunate circumstances you are suffering from technical difficulties or your home which
+                    should be listed is no longer advertised, please contact our customer support specialists which are
+                    available 24/7.
+                </p>
+                <p>@REAgencyTechSupport on Instagram or Facebook; Reach us at
+                    1-800-865-2442. </p>
+            </div>
+        </div>
+    </div>
+    <!--Footer Section-->
+    <!--Create a container to store foot links-->
+    <div class="footer__container">
+        <!--Create footer link which contain wrappers of individual links items-->
+        <div class="footer__links">
+            <!--Create footer wrapper 1 which contains individual links items to behave modular on site-->
+            <div class="footer__link--wrapper">
+                <!--individual links item -->
+                <div class="footer__link--items">
+                    <h2>About Us</h2>
+                    <a href="/aboutUs.html">What we do</a>
+                    <a href="/aboutUs.html">Testimonials</a>
+                    <a href="/">Terms of Service</a>
+                </div>
+                <!--individual links item -->
+                <div class="footer__link--items">
+                    <h2>Contact Us</h2>
+                    <a href="/contact.html">Contact</a>
+                    <a href="/contact.html">Support</a>
+                </div>
+                <div class="footer__link--items">
+                    <h2>Social Media</h2>
+                    <a href="/">Facebook</a>
+                    <a href="/">Instagram</a>
+                    <a href="/">Youtube</a>
+                </div>
+            </div>
+            <!--Social Media Section-->
+        </div>
+        <div class="social__media">
+            <!--Create footer wrapper which contains individual links items to behave modular on site-->
+            <div class="social__media--wrap">
+                <div class="footer__logo">
+                    <a href="/" id="footer__logo"><i class="fa-solid fa-house-chimney"></i>Real Vision</a>
+                </div>
+                <p class="website__right">Real Vision 2022. All Rights Reserved</p>
+                <div class="social__icons">
+                    <a href="/" class="social__icon--link"><i class="fab fa-facebook"></i></a>
+                    <a href="/" class="social__icon--link"><i class="fab fa-instagram"></i></a>
+                    <a href="/" class="social__icon--link"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
