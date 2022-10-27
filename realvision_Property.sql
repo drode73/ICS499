@@ -23,15 +23,15 @@ DROP TABLE IF EXISTS `Property`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `Property` (
-  `propertyID` int NOT NULL AUTO_INCREMENT,
+  `property_id` int NOT NULL AUTO_INCREMENT,
   `address` varchar(45) NOT NULL,
   `num_bath` int NOT NULL,
-  `num_bed` int NOT NULL,
-  `price` int NOT NULL,
+  `num_bed` decimal(5,2) NOT NULL,
+  `price` decimal(10,2) NOT NULL,
   `square_footage` int NOT NULL,
   `arce` decimal(5,2) NOT NULL,
-  PRIMARY KEY (`propertyID`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+  PRIMARY KEY (`property_id`)
+) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -40,6 +40,7 @@ CREATE TABLE `Property` (
 
 LOCK TABLES `Property` WRITE;
 /*!40000 ALTER TABLE `Property` DISABLE KEYS */;
+INSERT INTO `Property` VALUES (1,'6066 Iaculis, Rd.',2,1.50,320000.00,10,10.00),(2,'719-9944 Odio, St.',4,3.00,420000.00,10,10.00),(3,'758-9428 Egestas Road',3,2.50,1320000.00,10,10.00),(4,'Ap #607-2894 Eleifend Rd.',3,2.00,310000.00,10,10.00),(5,'1864 Consectetuer, St.',2,1.50,270000.00,10,10.00),(6,'1239 In Rd.',5,3.50,2320000.00,10,10.00);
 /*!40000 ALTER TABLE `Property` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
@@ -52,4 +53,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2022-10-24 13:51:11
+-- Dump completed on 2022-10-27 14:59:51
