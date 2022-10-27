@@ -23,17 +23,15 @@ DROP TABLE IF EXISTS `Agent`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `Agent` (
-  `idAgent` int NOT NULL,
+  `user_id` int NOT NULL,
   `agent_first` varchar(45) NOT NULL,
   `agent_last` varchar(45) NOT NULL,
   `agent_phone` varchar(45) NOT NULL,
   `agent_email` varchar(45) NOT NULL,
-  `idProperty` int NOT NULL,
-  PRIMARY KEY (`idAgent`),
-  KEY `idAgent_idx` (`idAgent`),
-  KEY `idProperty_idx` (`idProperty`),
-  CONSTRAINT `idAgent` FOREIGN KEY (`idAgent`) REFERENCES `User` (`idUser`),
-  CONSTRAINT `idProperty` FOREIGN KEY (`idProperty`) REFERENCES `Property` (`propertyID`)
+  `property_id` int NOT NULL,
+  PRIMARY KEY (`user_id`),
+  KEY `idAgent_idx` (`user_id`),
+  KEY `idProperty_idx` (`property_id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
@@ -43,6 +41,7 @@ CREATE TABLE `Agent` (
 
 LOCK TABLES `Agent` WRITE;
 /*!40000 ALTER TABLE `Agent` DISABLE KEYS */;
+INSERT INTO `Agent` VALUES (1,'Cailin','Francis','(623) 723-3332','consequat.enim@hotmail.com',1),(2,'Garrett','Waters','1-468-886-7374','semper@outlook.org',2),(3,'Jacqueline','Riddle','1-286-623-3663','est@google.edu',2),(4,'Pearl','Riddle','1-481-269-8495','ut.mi.duis@yahoo.org',5),(5,'Nerea','Nunez','(487) 726-5685','a.scelerisque@protonmail.org',6);
 /*!40000 ALTER TABLE `Agent` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
@@ -55,4 +54,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2022-10-24 13:51:10
+-- Dump completed on 2022-10-27 14:59:50

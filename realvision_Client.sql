@@ -23,14 +23,14 @@ DROP TABLE IF EXISTS `Client`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `Client` (
-  `idClient` int NOT NULL,
+  `user_id` int NOT NULL,
   `client_first` varchar(45) NOT NULL,
   `client_last` varchar(45) NOT NULL,
   `client_phone` varchar(45) NOT NULL,
   `client_email` varchar(45) NOT NULL,
-  PRIMARY KEY (`idClient`),
-  KEY `clientId_idx` (`idClient`),
-  CONSTRAINT `idClient` FOREIGN KEY (`idClient`) REFERENCES `User` (`idUser`)
+  PRIMARY KEY (`user_id`),
+  KEY `clientId_idx` (`user_id`),
+  CONSTRAINT `idClient` FOREIGN KEY (`user_id`) REFERENCES `User` (`user_id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
@@ -40,6 +40,7 @@ CREATE TABLE `Client` (
 
 LOCK TABLES `Client` WRITE;
 /*!40000 ALTER TABLE `Client` DISABLE KEYS */;
+INSERT INTO `Client` VALUES (6,'Marny','Kelly','(224) 348-2821','est.tempor.bibendum@protonmail.ca'),(7,'Simone','Reese','1-246-299-6618','feugiat.tellus@yahoo.ca'),(8,'Odette','Mendoza','1-767-393-2474','vitae.odio@aol.edu'),(9,'Elvis','Ayala','(817) 936-6730','lacinia.vitae.sodales@google.org'),(10,'Sierra','Edwards','1-429-958-4957','sed.et@yahoo.ca');
 /*!40000 ALTER TABLE `Client` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
@@ -52,4 +53,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2022-10-24 13:51:10
+-- Dump completed on 2022-10-27 14:59:51
